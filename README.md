@@ -10,8 +10,6 @@ If you are loading a very large document or set of documents your session token 
 
 The embedding and LLM models are defined in lines 18 and 35. You can enter different models here but be sure to check the models you use work with hugging face embeddings and/or endpoints.
 
-Another improvement is the ability to add or remove multiple PDFs, making it possible to upload a corpus of PDF documents rather than a single file.
-
 10/3/2024: Added functionality to save the chat history to a file.
 
 10/5/2024: Added funtionality to process CSV and text files. Application now expects .csv extension for CSV filenames, .txt extension for text filenames, and .pdf extension for PDF files.
