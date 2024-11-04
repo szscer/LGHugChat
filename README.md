@@ -4,7 +4,7 @@ The code was modified to work with hugging chat embeddings and endpoints, instea
 
 https://huggingface.co/sentence-transformers/all-mpnet-base-v2 https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3 
 
-Line 60 of main.py needs to point to an existing filepath. Once the program is running, any PDF can be chosen by navigating in a browser via the "configure" tab, but the program will be expecting a PDF document to begin with, otherwise you may get a ValueError exception when compiling the code. To start the program, type and enter "panel serve main.py --autoreload" in your project's terminal prompt.
+Line 60 of main.py needs to point to an existing filepath. Once the program is running, any PDF, CSV, or text file can be chosen by navigating in a browser via the "configure" tab, but the program will be expecting a document to begin with, otherwise you may get a ValueError exception when compiling the code. To start the program, type and enter "panel serve main.py --autoreload" in your project's terminal prompt.
 
 If you are loading a very large document your session token may expire. To change the default bokeh server session timeout use the --session-token-expiration option. Example: "panel serve main.py --autoreload --session-token-expiration 900000" (assumming units are in milliseconds this should be equivalent to 15 minutes).
 
